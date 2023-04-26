@@ -5,6 +5,8 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+
+include_directories(include)
 add_library(reflexxes SHARED 
 src/ReflexxesAPI.cpp
 src/TypeIIRMLCalculatePositionalExtrems.cpp
