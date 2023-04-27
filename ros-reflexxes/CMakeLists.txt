@@ -7,7 +7,7 @@ endif()
 
 
 include_directories( include/ros-reflexxes )
-add_library(reflexxes SHARED 
+add_library(reflexxes 
 src/ReflexxesAPI.cpp
 src/TypeIIRMLCalculatePositionalExtrems.cpp
 src/TypeIIRMLDecisions.cpp
@@ -38,7 +38,7 @@ src/TypeIIRMLVelocityMethods.cpp
 src/TypeIIRMLVelocitySetupPhaseSyncSelectionVector.cpp)
 
 install( TARGETS reflexxes DESTINATION lib)
-install( DIRECTORY include/ DESTINATION include)
+install( DIRECTORY include/ros-reflexxes/ DESTINATION include)
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
