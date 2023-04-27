@@ -6,7 +6,7 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 
 
-include_directories(include)
+include_directories( include/ros-reflexxes )
 add_library(reflexxes SHARED 
 src/ReflexxesAPI.cpp
 src/TypeIIRMLCalculatePositionalExtrems.cpp
