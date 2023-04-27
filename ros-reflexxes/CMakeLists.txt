@@ -38,7 +38,7 @@ src/TypeIIRMLVelocityMethods.cpp
 src/TypeIIRMLVelocitySetupPhaseSyncSelectionVector.cpp)
 
 install( TARGETS reflexxes DESTINATION lib)
-install( DIRECTORY include/ros-reflexxes/ DESTINATION include)
+install( DIRECTORY include/ DESTINATION include)
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
